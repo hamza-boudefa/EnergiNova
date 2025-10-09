@@ -8,7 +8,7 @@ const Logo: React.FC = () => {
         alt='logo'
         width={150}
         height={68}
-        unoptimized={true}
+        priority
         className='dark:hidden'
       />
       <Image
@@ -16,7 +16,7 @@ const Logo: React.FC = () => {
         alt='logo'
         width={150}
         height={68}
-        unoptimized={true}
+        priority
         className='dark:block hidden'
       />
     </>

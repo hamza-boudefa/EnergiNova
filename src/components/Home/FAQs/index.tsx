@@ -9,9 +9,9 @@ import {
 
 const FAQ: React.FC = () => {
     return (
-        <section id='faqs'>
+        <section id='faqs' className='py-12 md:py-16 lg:py-20'>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-                <div className="grid lg:grid-cols-1 gap-10 ">
+                <div className="grid lg:grid-cols-1 gap-10">
                     {/* <div className='lg:mx-0 mx-auto'>
                         <Image
                             src="/images/faqs/faq-image.png"
@@ -22,15 +22,15 @@ const FAQ: React.FC = () => {
                             unoptimized={true}
                         />
                     </div> */}
-                    <div className='lg:px-12'>
-                        <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
-                            <Icon icon="ph:question-fill" className="text-2xl text-primary " />
+                    <div className='lg:px-12 px-0'>
+                        <p className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2 items-center">
+                            <Icon icon="ph:question-fill" className="text-xl sm:text-2xl text-primary" />
                             Questions fréquentes
                         </p>
-                        <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white'>
+                        <h2 className='text-3xl sm:text-40 lg:text-52 leading-[1.2] font-medium text-dark dark:text-white mt-4 mb-4'>
                             Tout sur EnergiNova Solutions
                         </h2>
-                        <p className='text-dark/50 dark:text-white/50 pr-20'>
+                        <p className='text-sm sm:text-base text-dark/50 dark:text-white/50 pr-0 sm:pr-10 lg:pr-20 mb-6'>
                             Retrouvez les réponses aux questions les plus courantes sur nos services en énergies renouvelables, BIM Management et diagnostics énergétiques.
                         </p>
                         <div className="my-8">

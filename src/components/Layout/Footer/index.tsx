@@ -76,8 +76,9 @@ const Footer = () => {
             {/* <Link href="#" className="text-white/40 hover:text-primary text-sm">
               Conditions d'utilisation
             </Link> */}
-            <div  className="text-white/40 hover:text-primary text-sm">
-              EnergiNova Solutions
+            <div className="text-white/40 text-sm">
+              <p>EnergiNova Solutions</p>
+              <p className="mt-1">26 rue Georges Pompidou, 78690 Les Essarts le roi</p>
             </div>
           </div>
         </div>

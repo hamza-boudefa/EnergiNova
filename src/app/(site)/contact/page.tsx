@@ -85,19 +85,15 @@ export default function Contact() {
       />
       
       {/* Contact Form & Info */} 
-      <section className="py-20 bg-white dark:bg-dark">
+      <section className="py-12 md:py-16 lg:py-20 bg-white dark:bg-dark">
         <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
-          <div className="grid grid-cols-12 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
             {/* Contact Form */}
-            <div className="lg:col-span-8 col-span-12">
-              <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8">
-                <h2 className="text-3xl font-semibold text-dark dark:text-white mb-6">
+            <div className="lg:col-span-2">
+              <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-6 sm:p-8">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-dark dark:text-white mb-4 sm:mb-6">
                   Envoyez-nous un message
                 </h2>
-                <div className="bg-gray-50 dark:bg-dark/50 rounded-2xl p-8">
-       <h2 className="text-3xl font-semibold text-dark dark:text-white mb-6">
-         Envoyez-nous un message
-      </h2>
       
       {submitStatus.type && (
         <div className={`mb-6 p-4 rounded-lg ${
@@ -109,8 +105,8 @@ export default function Contact() {
         </div>
       )}
       
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div>
             <label htmlFor="nom" className="block text-sm font-medium text-dark dark:text-white mb-2">
               Nom *
@@ -143,7 +139,7 @@ export default function Contact() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-dark dark:text-white mb-2">
               Email *
@@ -246,49 +242,48 @@ export default function Contact() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full md:w-auto px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
         >
           {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
         </button>
       </form>
-    </div>
               </div>
             </div>
             
             {/* Contact Information */}
-            <div className="lg:col-span-4 col-span-12">
-              <div className="space-y-8">
+            <div className="lg:col-span-1 mt-8 lg:mt-0">
+              <div className="space-y-6 sm:space-y-8">
                 <div>
-                  <h3 className="text-2xl font-semibold text-dark dark:text-white mb-6">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-dark dark:text-white mb-4 sm:mb-6">
                     Nos coordonnées
                   </h3>
                   
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="space-y-4 sm:space-y-6">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-dark dark:text-white mb-1">Adresse</h4>
-                        <p className="text-dark/70 dark:text-white/70">
-                          123 Avenue de l'Innovation<br />
-                          75001 Paris, France
+                        <h4 className="text-sm sm:text-base font-semibold text-dark dark:text-white mb-1">Adresse</h4>
+                        <p className="text-xs sm:text-sm text-dark/70 dark:text-white/70">
+                          26 rue Georges Pompidou<br />
+                          78690 Les Essarts le roi, France
                         </p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-dark dark:text-white mb-1">Téléphone</h4>
-                        <p className="text-dark/70 dark:text-white/70">
+                        <h4 className="text-sm sm:text-base font-semibold text-dark dark:text-white mb-1">Téléphone</h4>
+                        <p className="text-xs sm:text-sm text-dark/70 dark:text-white/70">
                           <a href="tel:+33123456789" className="hover:text-primary transition-colors">
                             +33 1 23 45 67 89
                           </a>
@@ -296,31 +291,31 @@ export default function Contact() {
                       </div>
                     </div>
                     
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-dark dark:text-white mb-1">Email</h4>
-                        <p className="text-dark/70 dark:text-white/70">
-                          <a href="mailto:contact@energinova-solutions.com" className="hover:text-primary transition-colors">
+                        <h4 className="text-sm sm:text-base font-semibold text-dark dark:text-white mb-1">Email</h4>
+                        <p className="text-xs sm:text-sm text-dark/70 dark:text-white/70">
+                          <a href="mailto:contact@energinova-solutions.com" className="hover:text-primary transition-colors break-all">
                             contact@energinova-solutions.com
                           </a>
                         </p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-dark dark:text-white mb-1">Horaires</h4>
-                        <p className="text-dark/70 dark:text-white/70">
+                        <h4 className="text-sm sm:text-base font-semibold text-dark dark:text-white mb-1">Horaires</h4>
+                        <p className="text-xs sm:text-sm text-dark/70 dark:text-white/70">
                           Lun - Ven: 9h00 - 18h00<br />
                           Sam: 9h00 - 12h00
                         </p>
@@ -330,16 +325,16 @@ export default function Contact() {
                 </div>
                 
                 {/* Quick Contact */}
-                <div className="bg-primary/5 rounded-xl p-6">
-                  <h4 className="text-lg font-semibold text-dark dark:text-white mb-4">
+                <div className="bg-primary/5 rounded-xl p-4 sm:p-6 mt-6">
+                  <h4 className="text-base sm:text-lg font-semibold text-dark dark:text-white mb-3 sm:mb-4">
                     Besoin d'une réponse rapide ?
                   </h4>
-                  <p className="text-dark/70 dark:text-white/70 mb-4">
+                  <p className="text-sm sm:text-base text-dark/70 dark:text-white/70 mb-3 sm:mb-4">
                     Appelez-nous directement pour discuter de votre projet.
                   </p>
                   <a 
                     href="tel:+33123456789"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300"
+                    className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300 text-sm sm:text-base"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -354,22 +349,22 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="py-20 bg-gray-50 dark:bg-dark/50">
+      <section className="py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-dark/50">
   <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-semibold text-dark dark:text-white mb-4">
+    <div className="text-center mb-8 sm:mb-12">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-dark dark:text-white mb-3 sm:mb-4">
         Notre localisation
       </h2>
-      <p className="text-dark/70 dark:text-white/70">
-        Situés au cœur de Paris, nous sommes facilement accessibles pour nos clients.
+      <p className="text-sm sm:text-base text-dark/70 dark:text-white/70 px-4">
+        Situés à Les Essarts le roi, nous sommes facilement accessibles pour nos clients.
       </p>
     </div>
 
     <div className="bg-white dark:bg-dark rounded-2xl overflow-hidden shadow-lg">
-      <div className="h-96">
+      <div className="h-64 sm:h-80 md:h-96">
         <iframe
           title="Google Maps"
-          src="https://www.google.com/maps?q=123+Avenue+de+l'Innovation,+75001+Paris&output=embed"
+          src="https://www.google.com/maps?q=26+rue+Georges+Pompidou,+78690+Les+Essarts+le+roi&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}

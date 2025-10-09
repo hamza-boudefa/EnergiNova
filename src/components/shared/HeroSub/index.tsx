@@ -13,7 +13,7 @@ const HeroSub: FC<HeroSubProps> = ({ title, description, badge }) => {
     return (
         <>
             <section className="text-center bg-cover !pt-40 pb-20 relative overflow-x-hidden" >
-                <div className='flex gap-2.5 items-center justify-center'>
+                <div className='flex flex-col gap-2.5 items-center justify-center'>
                     <span>
                         {/* <Icon
                             icon={'ph:house-simple-fill'}
@@ -26,7 +26,7 @@ const HeroSub: FC<HeroSubProps> = ({ title, description, badge }) => {
                             alt='logo'
                             width={150}
                             height={68}
-                            unoptimized={true}
+                            loading="lazy"
                         />
                     </span>
                     <p className='text-base font-semibold text-dark/75 dark:text-white/75'>

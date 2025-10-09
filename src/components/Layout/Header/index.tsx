@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 alt='logo'
                 width={150}
                 height={68}
-                unoptimized={true}
+                priority
                 className={`${isHomepage ? sticky ? "block dark:hidden" : "hidden" : sticky ? "block dark:hidden" : "block dark:hidden"}`}
               />
               <Image
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
                 alt='logo'
                 width={150}
                 height={68}
-                unoptimized={true}
+                priority
                 className={`${isHomepage ? sticky ? "hidden dark:block" : "block" : sticky ? "dark:block hidden" : "dark:block hidden"}`}
               />
             </Link>

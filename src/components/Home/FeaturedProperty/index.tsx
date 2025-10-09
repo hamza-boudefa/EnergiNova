@@ -54,13 +54,15 @@ const FeaturedProperty: React.FC = () => {
                       width={680}
                       height={530}
                       className="rounded-2xl w-full h-540"
-                      unoptimized={true}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAA8A/9k="
                     />
                   </CarouselItem>
                 ))}
               </CarouselContent>
             </Carousel>
-            <div className="absolute left-2/5 bg-dark/50 rounded-full py-2.5 bottom-10 flex justify-center mt-4 gap-2.5 px-2.5">
+            <div className="absolute left-1/2 -translate-x-1/2 sm:left-2/5 sm:translate-x-0 bg-dark/50 rounded-full py-2.5 bottom-10 flex justify-center mt-4 gap-2.5 px-2.5">
               {Array.from({ length: count }).map((_, index) => (
                 <button
                   key={index}
@@ -91,7 +93,7 @@ const FeaturedProperty: React.FC = () => {
               3 bathrooms, and spacious living areas. Enjoy energy efficiency, natural light, security systems, outdoor spaces, and 2 bar areas—perfect for 8+
               guests. Built in 2025.
             </p>
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
@@ -100,7 +102,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='block dark:hidden'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                   <Image
                     src={'/images/hero/dark-sofa.svg'}
@@ -108,7 +110,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='hidden dark:block'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                 </div>
                 <h6 className="">4 Bedrooms</h6>
@@ -121,7 +123,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='block dark:hidden'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                   <Image
                     src={'/images/hero/dark-tube.svg'}
@@ -129,7 +131,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='hidden dark:block'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                 </div>
                 <h6 className="">3 Bathrooms</h6>
@@ -142,7 +144,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='block dark:hidden'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                   <Image
                     src={'/images/hero/dark-parking.svg'}
@@ -150,7 +152,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='hidden dark:block'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                 </div>
                 <h6 className="">Parking Space</h6>
@@ -163,7 +165,7 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='block dark:hidden'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                   <Image
                     src={'/images/hero/dark-bar.svg'}
@@ -171,13 +173,13 @@ const FeaturedProperty: React.FC = () => {
                     width={24}
                     height={24}
                     className='hidden dark:block'
-                    unoptimized={true}
+                    loading="lazy"
                   />
                 </div>
                 <h6 className="">2 Bar areas</h6>
               </div>
             </div>
-            <div className="flex gap-10">
+            <div className="flex flex-col sm:flex-row gap-6 md:gap-10">
               <Link href="/contactus" className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white">
                 Get in touch
               </Link>
