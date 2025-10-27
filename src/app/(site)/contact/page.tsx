@@ -167,7 +167,7 @@ export default function Contact() {
               onChange={handleInputChange}
               required
               className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-dark text-dark dark:text-white"
-              placeholder="+33 1 23 45 67 89"
+              placeholder="06 64 45 67 06"
             />
           </div>
         </div>
@@ -284,8 +284,8 @@ export default function Contact() {
                       <div>
                         <h4 className="text-sm sm:text-base font-semibold text-dark dark:text-white mb-1">Téléphone</h4>
                         <p className="text-xs sm:text-sm text-dark/70 dark:text-white/70">
-                          <a href="tel:+33123456789" className="hover:text-primary transition-colors">
-                            +33 1 23 45 67 89
+                          <a href="tel:0664456706" className="hover:text-primary transition-colors">
+                            06 64 45 67 06
                           </a>
                         </p>
                       </div>
@@ -333,7 +333,7 @@ export default function Contact() {
                     Appelez-nous directement pour discuter de votre projet.
                   </p>
                   <a 
-                    href="tel:+33123456789"
+                    href="tel:0664456706"
                     className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors duration-300 text-sm sm:text-base"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

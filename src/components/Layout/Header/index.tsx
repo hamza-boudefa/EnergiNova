@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <Icon icon={'ph:phone-bold'} width={24} height={24} />
-                +33 1 23 45 67 89
+                06 64 45 67 06
               </Link>
             </div>
             <div>
@@ -175,7 +175,7 @@ const Header: React.FC = () => {
               contact@energinova-solutions.com
             </Link>
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-              +33 1 23 45 67 89
+              06 64 45 67 06
             </Link>
           </div>
         </div>

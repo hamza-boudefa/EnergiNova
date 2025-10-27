@@ -556,10 +556,10 @@ export default function Prestations() {
               Contactez-nous
             </a>
             <a 
-              href="tel:+33123456789" 
+              href="tel:0664456706" 
               className="px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-primary transition-colors duration-300"
             >
-              +33 1 23 45 67 89
+              06 64 45 67 06
             </a>
           </div>
         </div>

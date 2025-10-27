@@ -148,7 +148,7 @@
 //               onChange={handleInputChange}
 //               required
 //               className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-dark text-dark dark:text-white"
-//               placeholder="+33 1 23 45 67 89"
+//               placeholder="06 64 45 67 06"
 //             />
 //           </div>
 //         </div>
